@@ -1,10 +1,11 @@
 from django.shortcuts import render
 
-def home(request):
-    return render(request,'home.html')
-
-def about(request):
-    return render(request,'about.html')
-
-def contact(request):
-    return render(request,'contact.html')
+def Student(request):
+    return render(request,'student.html',
+                {
+                    "name":"indu",
+                    "age":19,
+                    "course":"Python FSD",
+                    "college":"ISTS"
+                }
+            )
